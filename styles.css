@@ -1,0 +1,178 @@
+/* font-family: 'Lexend Mega', sans-serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lexend Mega', sans-serif;
+    color: black;
+    font-size: 22px;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.136rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.818rem;
+}
+
+/* Header */
+.header h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.header li {
+    list-style: none;
+    margin: 10px 32px;
+}
+
+.header li a {
+    color: black;
+}
+
+.header li a:hover {
+    text-decoration: none;
+}
+
+/* banner */
+#banner {
+    text-align: center;
+    background: url('images/banner.jpg') 50% 80% / cover no-repeat;
+    padding: 115px 0;
+}
+
+.banner-container {
+    background-color: white;
+    padding: 5px;
+}
+
+/* Portfolio */
+#portfolio {
+    margin-top: 70px;
+}
+
+.portfolio-text {
+    text-align: center;
+}
+
+.portfolio-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portfolio-image {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.portfolio-image img,
+.portfolio-image p {
+    width: 50%;
+}
+
+.portfolio-image p {
+    padding: 5px;
+    min-width: 240px;
+}
+
+.portfolio-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+/* Team */
+#team h2 {
+    text-align: center;
+}
+
+.team-bg {
+    background: url('images/banner.jpg') 50% 10% / cover no-repeat;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.team-col {
+    max-width: 300px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.team-col img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Contact & footer */
+.contact {
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.footer h5 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+
+    .team-bg {
+        background: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.8)) ,url('images/banner.jpg') 50% 10% / cover no-repeat;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .portfolio-image-container {
+        flex-direction: column;
+    }
+}
